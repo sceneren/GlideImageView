@@ -6,6 +6,7 @@ buildscript {
         maven { url "https://jitpack.io" }
         maven { url 'https://maven.google.com' }
         maven { url 'https://dl.bintray.com/sfsheng0322/maven' }
+        maven { url 'https://dl.bintray.com/scene/SceneGlideLoader' }
     }
 
     dependencies {
@@ -22,6 +23,7 @@ allprojects {
         maven { url "https://jitpack.io" }
         maven { url 'https://maven.google.com' }
         maven { url 'https://dl.bintray.com/sfsheng0322/maven' }
+        maven { url 'https://dl.bintray.com/scene/SceneGlideLoader' }
     }
 
     ext {

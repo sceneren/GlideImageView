@@ -53,11 +53,13 @@ dependencies {
 
     implementation 'androidx.percentlayout:percentlayout:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-common:2.2.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.github.chrisbanes:PhotoView:2.1.3'
 
     implementation 'com.sunfusheng:FirUpdater:1.1.1'
-    implementation project(':SceneGlideLoader')
+    implementation 'wiki.scene.glide:SceneGlideLoader:1.0.0'
+//    implementation project(':SceneGlideLoader')
 }
