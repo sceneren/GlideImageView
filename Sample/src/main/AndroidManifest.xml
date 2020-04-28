@@ -29,21 +29,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="wiki.scene.glideimageview.sample.image.SingleImageActivity"
-            android:theme="@style/AppCompatFullscreenStyle" />
-
-        <activity
-            android:name="wiki.scene.glideimageview.sample.about.AboutActivity"
-            android:theme="@style/AboutTheme" />
-
-        <activity android:name="wiki.scene.glideimageview.sample.NineImageViewActivity" />
-
-        <activity android:name="wiki.scene.glideimageview.sample.RecyclerViewActivity" />
-
-        <activity
-            android:name="wiki.scene.glideimageview.sample.image.ImagesActivity"
-            android:theme="@style/ImagesStyle" />
     </application>
 
 </manifest>

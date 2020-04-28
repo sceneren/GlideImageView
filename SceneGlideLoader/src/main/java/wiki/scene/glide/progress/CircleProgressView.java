@@ -16,10 +16,12 @@ import android.widget.ProgressBar;
 import androidx.annotation.IntDef;
 
 import com.sunfusheng.glideimageview.R;
-import wiki.scene.glide.util.Utils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import wiki.scene.glide.util.Utils;
+
 
 public class CircleProgressView extends ProgressBar {
 

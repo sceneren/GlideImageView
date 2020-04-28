@@ -16,6 +16,7 @@ import okio.Okio;
 import okio.Source;
 
 /**
+ * 计算进度
  * @author by sunfusheng on 2017/6/14.
  */
 public class ProgressResponseBody extends ResponseBody {
@@ -23,12 +24,12 @@ public class ProgressResponseBody extends ResponseBody {
     private static final Handler mainThreadHandler = new Handler(Looper.getMainLooper());
 
     private String url;
-    private ProgressResponseBody.InternalProgressListener internalProgressListener;
+    private InternalProgressListener internalProgressListener;
 
     private ResponseBody responseBody;
     private BufferedSource bufferedSource;
 
-    ProgressResponseBody(String url, ProgressResponseBody.InternalProgressListener internalProgressListener, ResponseBody responseBody) {
+    ProgressResponseBody(String url, InternalProgressListener internalProgressListener, ResponseBody responseBody) {
         this.url = url;
         this.internalProgressListener = internalProgressListener;
         this.responseBody = responseBody;

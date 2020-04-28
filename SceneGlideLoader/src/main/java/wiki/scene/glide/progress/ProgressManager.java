@@ -2,20 +2,21 @@ package wiki.scene.glide.progress;
 
 import android.text.TextUtils;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * @author by sunfusheng on 2017/6/14.
+ * 进度监听器管理类
+ * 加入图片加载进度监听，加入Https支持
+ * @author : BaoZhou
+ * @date : 2019/3/17 1:49
  */
 public class ProgressManager {
 
-    private static Map<String, OnProgressListener> listenersMap = Collections.synchronizedMap(new HashMap<>());
+    private static ConcurrentHashMap<String, OnProgressListener> listenersMap = new ConcurrentHashMap<>();
     private static OkHttpClient okHttpClient;
 
     private ProgressManager() {
