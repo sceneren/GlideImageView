@@ -1,1 +1,2 @@
-include ':sample', ':glideimageview'
+include ':sample'
+include ':SceneGlideLoader'

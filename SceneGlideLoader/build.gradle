@@ -28,6 +28,7 @@ android {
 }
 
 dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     api 'androidx.appcompat:appcompat:1.1.0'
     api 'com.github.bumptech.glide:glide:' + GLIDE_VERSION
     api 'com.github.bumptech.glide:annotations:' + GLIDE_VERSION
@@ -39,8 +40,8 @@ dependencies {
 publish {
     userOrg = 'scene'
     groupId = 'wiki.scene.glide'
-    artifactId = 'GlideImageView'
+    artifactId = 'SceneGlideLoader'
     publishVersion = VERSION_NAME
-    desc = '基于sunfusheng的GlideImageView，优化封装'
-    website = 'https://github.com/sunfusheng/GlideImageView'
+    desc = 'xxxxx'
+//    website = 'https://github.com/sunfusheng/GlideImageView'
 }
