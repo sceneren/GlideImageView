@@ -41,5 +41,6 @@ public class MainActivity extends AppCompatActivity {
         GlideV4.loadImage(this, url1, imageView1);
         GlideV4.loadImage(this, url2, imageView2, false);
         GlideV4.loadImage(this, url3, imageView3);
+        GlideV4.loadGifImage(this, gif2, imageView4);
     }
 }

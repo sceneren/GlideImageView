@@ -1,1 +1,1 @@
-package wiki.scene.glide.callback;/** * @Description: 类作用描述 * @Author: scene * @CreateDate: 2019-11-22 17:57 * @UpdateUser: 更新者： * @UpdateDate: 2019-11-22 17:57 * @UpdateRemark: 更新说明： * @Version: 1.0 */public interface ImageDownloadCallback {    void downloadSuccess(String filePath);    void downloadFail();}
+package wiki.scene.glide.callback;public interface ImageDownloadCallback {    void downloadSuccess(String filePath);    void downloadFail();}

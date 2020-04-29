@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GlideImageView-master.iml" filepath="$PROJECT_DIR$/GlideImageView-master.iml" group="GlideImageView-master" />
       <module fileurl="file://$PROJECT_DIR$/SceneGlideLoader/SceneGlideLoader.iml" filepath="$PROJECT_DIR$/SceneGlideLoader/SceneGlideLoader.iml" group="GlideImageView-master/SceneGlideLoader" />
+      <module fileurl="file://$PROJECT_DIR$/SceneNettySocket/SceneNettySocket.iml" filepath="$PROJECT_DIR$/SceneNettySocket/SceneNettySocket.iml" group="GlideImageView-master/SceneNettySocket" />
       <module fileurl="file://$PROJECT_DIR$/Sample/sample.iml" filepath="$PROJECT_DIR$/Sample/sample.iml" group="GlideImageView-master/sample" />
     </modules>
   </component>

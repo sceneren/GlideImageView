@@ -10,10 +10,6 @@ import com.bumptech.glide.request.RequestListener;
 
 import wiki.scene.glide.progress.OnProgressListener;
 
-/**
- * @author : BaoZhou
- * @date : 2019/6/4 8:32
- */
 public class GlideConfigImpl extends ImageConfig {
 
     /**
@@ -42,6 +38,7 @@ public class GlideConfigImpl extends ImageConfig {
     private BaseRequestOptions<?> baseRequestOptions;
     private OnProgressListener onProgressListener;
     private RequestListener requestListener;
+    private boolean isGif;
 
     private GlideConfigImpl(Builder builder) {
         this.url = builder.url;
@@ -68,6 +65,7 @@ public class GlideConfigImpl extends ImageConfig {
         this.blurValue = builder.blurValue;
         this.onProgressListener = builder.onProgressListener;
         this.requestListener = builder.requestListener;
+        this.isGif = builder.isGif;
     }
 
     public int getCacheStrategy() {
@@ -146,6 +144,11 @@ public class GlideConfigImpl extends ImageConfig {
         return imageRadius > 0;
     }
 
+    public boolean getIsGif() {
+        return isGif;
+    }
+
+
     public OnProgressListener getOnProgressListener() {
         return onProgressListener;
     }
@@ -194,6 +197,7 @@ public class GlideConfigImpl extends ImageConfig {
         private OnProgressListener onProgressListener;
         private RequestListener requestListener;
         private BaseRequestOptions<?> baseRequestOptions;
+        private boolean isGif = false;
 
         private Builder() {
         }
@@ -225,6 +229,11 @@ public class GlideConfigImpl extends ImageConfig {
 
         public Builder imageView(ImageView imageView) {
             this.imageView = imageView;
+            return this;
+        }
+
+        public Builder setIsGif(boolean isGif) {
+            this.isGif = isGif;
             return this;
         }
 

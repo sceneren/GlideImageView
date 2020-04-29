@@ -38,7 +38,7 @@ allprojects {
         VERSION_NAME = '1.0.0'
     }
 }
-
+tasks.getByPath(":SceneGlideLoader:javadocRelease").enabled = false
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

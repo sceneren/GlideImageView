@@ -19,12 +19,6 @@ import java.io.InputStream;
 
 import wiki.scene.glide.http.OkHttpUrlLoader;
 
-
-/**
- * 
- * @author : BaoZhou
- * @date : 2019/3/17 2:52
- */
 @GlideModule(glideName = "EasyGlideApp")
 public class EasyGlideModule extends AppGlideModule {
 

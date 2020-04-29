@@ -8,12 +8,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-/**
- * 进度监听器管理类
- * 加入图片加载进度监听，加入Https支持
- * @author : BaoZhou
- * @date : 2019/3/17 1:49
- */
 public class ProgressManager {
 
     private static ConcurrentHashMap<String, OnProgressListener> listenersMap = new ConcurrentHashMap<>();

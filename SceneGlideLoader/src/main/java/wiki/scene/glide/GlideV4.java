@@ -112,6 +112,7 @@ public class GlideV4 {
                         .errorPic(placeHolder)
                         .placeholder(placeHolder)
                         .imageView(imageView)
+                        .setIsGif(true)
                         .progressListener(onProgressListener)
                         .requestListener(requestListener)
                         .build());
@@ -301,7 +302,12 @@ public class GlideV4 {
         Preconditions.checkNotNull(config.getImageView(), "ImageView is required");
         GlideRequests requests;
         requests = EasyGlideApp.with(context);
-        GlideRequest<Drawable> glideRequest = null;
+        if (config.getIsGif()) {
+            requests.asGif();
+        } else {
+            requests.asBitmap();
+        }
+        GlideRequest<Drawable> glideRequest;
         if (config.getDrawableId() != 0) {
             glideRequest = requests.load(config.getDrawableId());
         } else {
@@ -390,8 +396,7 @@ public class GlideV4 {
         if (config.getOnProgressListener() != null) {
             ProgressManager.addListener(config.getUrl(), config.getOnProgressListener());
         }
-
-        glideRequest.dontAnimate().into(new GlideImageViewTarget(config.getImageView(), config.getUrl()));
+        glideRequest.into(new GlideImageViewTarget(config.getImageView(), config.getUrl()));
 
     }
 
